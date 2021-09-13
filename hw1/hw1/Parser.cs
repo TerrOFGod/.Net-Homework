@@ -4,6 +4,7 @@ namespace hw1
 {
     public class Parser
     {
+        private const int Correct = 0;
         private const int WrongArgCount = 1;
         private const int WrongArgFormat = 2;
         private const int WrongOperation = 3;
@@ -25,7 +26,7 @@ namespace hw1
                 return WrongArgFormat;
             }
             
-            return 0;
+            return Correct;
         }
         
         private static bool TryParseValue(string args, out int val)
