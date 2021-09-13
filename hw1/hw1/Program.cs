@@ -2,11 +2,17 @@
 
 namespace hw1
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static int Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var isValid = Parser.TryParseArguments(args, out var operation,
+                out var val1, out var val2);
+            if (isValid != 0) return isValid;
+            
+            var result = Calculator.Calculate(operation, val1, val2);
+            Console.WriteLine($"Result is: {result}");
+            return 0;
         }
     }
 }
