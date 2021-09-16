@@ -2,7 +2,7 @@
 
 namespace hw1
 {
-    public class Parser
+    public static class Parser
     {
         private const int Correct = 0;
         private const int WrongArgCount = 1;

@@ -1,6 +1,6 @@
 ﻿namespace hw1
 {
-    public class Calculator
+    public static class Calculator
     {
         public static int Calculate(Operations operation, int val1, int val2)
         {
