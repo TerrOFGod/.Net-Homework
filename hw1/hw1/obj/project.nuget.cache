@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uf71JwAZvTqtaxAQ64LuYPi5YR25VOjCsDrF2V8FYaCRtF16mE5R1u8x5T6FB/bZp8NwzPlNBxiz0T+xmw3/Tw==",
+  "dgSpecHash": "c/12z+ka4NwRXw6MYqT3yX8tuotv1qem6ajjuPXoPtxK8wYdbLXMjJs75yiy0hseqmM+efSCNld+mGkBhpQ3MQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\hw1\\hw1\\hw1.csproj",
   "expectedPackageFiles": [
@@ -83,7 +83,8 @@
     "C:\\Users\\LordVT\\.nuget\\packages\\xunit.assert\\2.4.1\\xunit.assert.2.4.1.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\xunit.core\\2.4.1\\xunit.core.2.4.1.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512",
-    "C:\\Users\\LordVT\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512"
+    "C:\\Users\\LordVT\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
+    "C:\\Users\\LordVT\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
   ],
   "logs": []
 }
