@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2Classes\\HW2Classes\\HW2Classes.ilproj": {}
+    "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2\\HW2Classes\\HW2Classes.ilproj": {}
   },
   "projects": {
-    "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2Classes\\HW2Classes\\HW2Classes.ilproj": {
+    "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2\\HW2Classes\\HW2Classes.ilproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2Classes\\HW2Classes\\HW2Classes.ilproj",
+        "projectUniqueName": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2\\HW2Classes\\HW2Classes.ilproj",
         "projectName": "HW2Classes",
-        "projectPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2Classes\\HW2Classes\\HW2Classes.ilproj",
+        "projectPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2\\HW2Classes\\HW2Classes.ilproj",
         "packagesPath": "C:\\Users\\LordVT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2Classes\\HW2Classes\\obj\\",
+        "outputPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2\\HW2Classes\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

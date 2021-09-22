@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hVanTHayTMt4P8h3/Ka4+AOfH7zPvV2XMQpK6IO8uonQD7vRCWVCQsPZwbbIGgSIlMkPac7SDINGSrWqImd6CA==",
+  "dgSpecHash": "nzXt2rU9SIi9fOnvBbx7ReeDbndeukdIicxjeavB+ZjIz+r5HDlwgz+JJoooLAR3bNYrp5hVRNo63LJ7ykIVQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2Classes\\HW2Classes\\HW2Classes.ilproj",
+  "projectFilePath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2\\HW2Classes\\HW2Classes.ilproj",
   "expectedPackageFiles": [
     "C:\\Users\\LordVT\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

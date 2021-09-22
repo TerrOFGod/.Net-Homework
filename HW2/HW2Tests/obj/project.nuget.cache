@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9204MZuPGxt3bbizeO9YctpXlGaM8ggz/vbUtF8ROevJiSsQR4YCDYExGL1zrcOoliEYUAXAmKx2/t60bvpEMw==",
+  "dgSpecHash": "2KppLGF01ii4c+EpFp4LBFh7R2K1/+HL2bWAO82SkkASgJEEoIpajQzp4LMR1OhNkJ1HgiRsY7sac9s1UiagDg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2Classes\\HW2Tests\\HW2Tests.csproj",
+  "projectFilePath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2\\HW2Tests\\HW2Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LordVT\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

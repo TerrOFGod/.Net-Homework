@@ -5957,11 +5957,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2Classes\\HW2Tests\\HW2Tests.csproj",
+      "projectUniqueName": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2\\HW2Tests\\HW2Tests.csproj",
       "projectName": "HW2Tests",
-      "projectPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2Classes\\HW2Tests\\HW2Tests.csproj",
+      "projectPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2\\HW2Tests\\HW2Tests.csproj",
       "packagesPath": "C:\\Users\\LordVT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2Classes\\HW2Tests\\obj\\",
+      "outputPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2\\HW2Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet"
@@ -5982,8 +5982,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2Classes\\HW2\\HW2.csproj": {
-              "projectPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2Classes\\HW2\\HW2.csproj"
+            "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2\\HW2\\HW2.csproj": {
+              "projectPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2\\HW2\\HW2.csproj"
             }
           }
         }
