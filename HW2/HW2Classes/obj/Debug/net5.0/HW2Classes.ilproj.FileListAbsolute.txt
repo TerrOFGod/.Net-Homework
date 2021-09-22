@@ -4,3 +4,8 @@ C:\Users\LordVT\Desktop\работа\game\.Net-Homework\HW2Classes\HW2Classes\bi
 C:\Users\LordVT\Desktop\работа\game\.Net-Homework\HW2Classes\HW2Classes\obj\Debug\net5.0\HW2Classes.ilproj.AssemblyReference.cache
 C:\Users\LordVT\Desktop\работа\game\.Net-Homework\HW2Classes\HW2Classes\obj\Debug\net5.0\HW2Classes.ilproj.CoreCompileInputs.cache
 C:\Users\LordVT\Desktop\работа\game\.Net-Homework\HW2Classes\HW2Classes\obj\Debug\net5.0\HW2Classes.dll
+C:\Users\LordVT\Desktop\работа\game\.Net-Homework\HW2\HW2Classes\bin\Debug\net5.0\HW2Classes.deps.json
+C:\Users\LordVT\Desktop\работа\game\.Net-Homework\HW2\HW2Classes\bin\Debug\net5.0\HW2Classes.dll
+C:\Users\LordVT\Desktop\работа\game\.Net-Homework\HW2\HW2Classes\obj\Debug\net5.0\HW2Classes.ilproj.AssemblyReference.cache
+C:\Users\LordVT\Desktop\работа\game\.Net-Homework\HW2\HW2Classes\obj\Debug\net5.0\HW2Classes.ilproj.CoreCompileInputs.cache
+C:\Users\LordVT\Desktop\работа\game\.Net-Homework\HW2\HW2Classes\obj\Debug\net5.0\HW2Classes.dll
