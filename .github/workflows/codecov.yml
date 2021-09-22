@@ -26,4 +26,4 @@ jobs:
     - name: Codecov
       uses: codecov/codecov-action@v2.1.0
       with:
-       file: "C:\Users\LordVT\Desktop\работа\game\.Net-Homework\CodecovReport.xml"
+       file: "C:\Users\LordVT\Desktop\работа\game\.Net-Homework\AllCover.xml"
