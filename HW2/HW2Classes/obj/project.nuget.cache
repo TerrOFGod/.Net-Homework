@@ -1,11 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "nzXt2rU9SIi9fOnvBbx7ReeDbndeukdIicxjeavB+ZjIz+r5HDlwgz+JJoooLAR3bNYrp5hVRNo63LJ7ykIVQQ==",
+  "dgSpecHash": "iJ54IZS3+/lfJljUgGi7oNWl+PvnrjUgAoT9KsGb470SG48wTgeP8iPYkxNH/rqarPIvlzre9dItrmMFhVD9kw==",
   "success": true,
   "projectFilePath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW2\\HW2Classes\\HW2Classes.ilproj",
   "expectedPackageFiles": [
-    "C:\\Users\\LordVT\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\LordVT\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\runtime.win-x64.microsoft.netcore.ilasm\\5.0.0\\runtime.win-x64.microsoft.netcore.ilasm.5.0.0.nupkg.sha512",
     "C:\\Users\\LordVT\\.nuget\\packages\\runtime.win-x64.microsoft.netcore.ildasm\\5.0.0\\runtime.win-x64.microsoft.netcore.ildasm.5.0.0.nupkg.sha512"
   ],
