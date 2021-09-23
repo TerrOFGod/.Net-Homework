@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW1Tests\\HW1Tests.csproj": {}
+    "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW1\\HW1Tests\\HW1Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW1Tests\\HW1Tests.csproj": {
+    "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW1\\HW1Tests\\HW1Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW1Tests\\HW1Tests.csproj",
+        "projectUniqueName": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW1\\HW1Tests\\HW1Tests.csproj",
         "projectName": "HW1Tests",
-        "projectPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW1Tests\\HW1Tests.csproj",
+        "projectPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW1\\HW1Tests\\HW1Tests.csproj",
         "packagesPath": "C:\\Users\\LordVT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW1Tests\\obj\\",
+        "outputPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW1\\HW1Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet"

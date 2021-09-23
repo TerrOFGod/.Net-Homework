@@ -5922,8 +5922,8 @@
     },
     "HW1/1.0.0": {
       "type": "project",
-      "path": "../HW1/HW1/HW1.csproj",
-      "msbuildProject": "../HW1/HW1/HW1.csproj"
+      "path": "../HW1/HW1.csproj",
+      "msbuildProject": "../HW1/HW1.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5942,11 +5942,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW1Tests\\HW1Tests.csproj",
+      "projectUniqueName": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW1\\HW1Tests\\HW1Tests.csproj",
       "projectName": "HW1Tests",
-      "projectPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW1Tests\\HW1Tests.csproj",
+      "projectPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW1\\HW1Tests\\HW1Tests.csproj",
       "packagesPath": "C:\\Users\\LordVT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW1Tests\\obj\\",
+      "outputPath": "C:\\Users\\LordVT\\Desktop\\работа\\game\\.Net-Homework\\HW1\\HW1Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet"
