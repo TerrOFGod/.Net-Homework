@@ -1673,7 +1673,7 @@
       },
       "HW1/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "xunit": "2.4.1"
         },
