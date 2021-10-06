@@ -23,7 +23,7 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-      working-directory: HW4/HW4Test
+      working-directory: C:\Users\LordVT\Desktop\работа\game\.Net-Homework\HW4\HW4Test
     - name: Codecov
       uses: codecov/codecov-action@v2.1.0
       with: 
