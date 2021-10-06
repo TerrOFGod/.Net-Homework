@@ -1,13 +1,14 @@
-// Learn more about F# at http://docs.microsoft.com/dotnet/fsharp
-
-open System
-
-// Define a function to construct a message to print
-let from whom =
-    sprintf "from %s" whom
+module HW4.Program
 
 [<EntryPoint>]
-let main argv =
-    let message = from "F#" // Call the function
-    printfn "Hello world %s" message
-    0 // return an integer exit code
+let main args =
+    let mutable val1 = 0
+    let mutable val2 = 0
+    let mutable operation = Operations.Plus
+    let check = Parser.tryParseArgs args &operation &val1 &val2
+    if check = ErrorCodes.Correct then
+        printf $"Result: {Calculator.calculate operation val1 val2}"
+        0
+    else
+        printf $"Arguments have error(s)"
+        int check
