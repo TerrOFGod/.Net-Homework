@@ -5,6 +5,7 @@
 
         <IsPackable>false</IsPackable>
         <GenerateProgramFile>false</GenerateProgramFile>
+        <RootNamespace>HW4Test</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -28,7 +29,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\HW4\HW4.fsproj" />
+      <ProjectReference Include="..\HW5\HW5.fsproj" />
     </ItemGroup>
 
 </Project>

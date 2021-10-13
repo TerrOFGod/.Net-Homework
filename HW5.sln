@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HW4", "HW4\HW4\HW4.fsproj", "{8E2CD46C-F8B2-45E5-BEFD-591A98A1BEE1}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HW5", "HW5\HW5\HW5.fsproj", "{8E2CD46C-F8B2-45E5-BEFD-591A98A1BEE1}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HW4Test", "HW4\HW4Test\HW4Test.fsproj", "{22CBC365-73E0-4031-A91C-48E3D3BE1A59}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HW5Test", "HW5\HW5Test\HW5Test.fsproj", "{22CBC365-73E0-4031-A91C-48E3D3BE1A59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
