@@ -1,34 +1,36 @@
-﻿module HW4.Parser
+﻿module HW5.Parser
 
-open System
-    
+open HW5.ResultBuilder
+
+let (>>=) x f = Result.bind f x
+   
 let checkArgumentCount (args:string[]) =
-    args.Length = 3
+    match args.Length with
+    | 3 -> Ok args
+    | _ -> Error $"The program requires 3 arguments to work, but the {args.Length} was entered"
 
-let tryParseOperation (arg:string) (operation: outref<Operations>) =
-    operation <- match arg with
-    | "+" -> Operations.Plus
-    | "-" -> Operations.Minus
-    | "*" -> Operations.Multiply
-    | "/" -> Operations.Divide
-    | _ -> Operations.Error
+let tryParseOperation (args:string[]) =
+    result{
+        let! operation =
+            match args.[1] with
+            | "+" -> Ok Operations.Plus
+            | "-" -> Ok Operations.Minus
+            | "*" -> Ok Operations.Multiply
+            | "/" -> Ok Operations.Divide
+            | _ -> Error $"The calculator does not recognize this operation: {args.[1]}"  
+        return  args.[0], operation, args.[2]
+    }
     
-let tryParseValue (arg:string) (value: outref<int>) =
-    if Int32.TryParse(arg, &value) then
-        true
-    else
-        printf $"Value is not int: {arg}"
-        false
+let tryParseValue arg =
+    try Ok(arg |> decimal)
+    with _ -> Error $"Wrong format of argument: {arg}"
+
+let tryParseValues (a, operation, b) =
+    result{
+        let! val1 = tryParseValue a
+        let! val2 = tryParseValue b
+        return val1, operation, val2 
+    }
         
-let tryParseArgs (args:string[]) (operation: outref<Operations>) (val1: outref<int>) (val2: outref<int>) =
-    tryParseOperation args.[1] &operation
-    if tryParseValue args.[0] &val1 = false || tryParseValue args.[2] &val2 = false then
-        ErrorCodes.WrongArgFormat
-    elif checkArgumentCount args = false then
-        printf $"The program requires 3 arguments to work, but the {args.Length} was entered"
-        ErrorCodes.WrongArgCount
-    elif operation = Operations.Error then
-        printf $"The calculator does not recognize this operation: {args.[1]}"
-        ErrorCodes.WrongOperation
-    else
-        ErrorCodes.Correct
+let tryParseArgs args=
+    checkArgumentCount args >>= tryParseOperation >>= tryParseValues  
