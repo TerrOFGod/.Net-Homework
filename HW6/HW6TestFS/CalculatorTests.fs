@@ -1,4 +1,4 @@
-﻿module HW4Tests.CalculatorTests
+﻿module HW6Tests.CalculatorTests
 
 open Xunit
 open HW5
@@ -11,10 +11,8 @@ open HW5.ResultBuilder
 [<InlineData(-2.6, 9.6, 7)>]
 [<InlineData(-3.37, -4.63, -8)>]
 let Calculate_Plus_WillReturnCorrectResult (val1, val2, expected) =
-    result{
-        let! result = Calculator.calculate (val1, Operations.Plus, val2)
-        Assert.Equal(expected, result)
-    }
+     let result = Calculator.calculate (val1, Operations.Plus, val2)
+     Assert.Equal(expected, result)
     
     
 [<Theory>]
@@ -23,10 +21,8 @@ let Calculate_Plus_WillReturnCorrectResult (val1, val2, expected) =
 [<InlineData(-7, 7, -14)>]
 [<InlineData(-25, -36, 11)>]
 let Calculate_Minus_WillReturnCorrectResult (val1, val2, expected) = 
-    result{
-        let! result = Calculator.calculate (val1, Operations.Minus, val2)
-        Assert.Equal(expected, result)
-    }
+    let result = Calculator.calculate (val1, Operations.Minus, val2)
+    Assert.Equal(expected, result)
     
 [<Theory>]
 [<InlineData(4, 3, 12)>]
@@ -34,10 +30,8 @@ let Calculate_Minus_WillReturnCorrectResult (val1, val2, expected) =
 [<InlineData(-5, 6, -30)>]
 [<InlineData(-7, -7, 49)>]
 let Calculate_Multiply_WillReturnCorrectResult (val1, val2, expected) = 
-    result{
-        let! result = Calculator.calculate (val1, Operations.Multiply, val2)
-        Assert.Equal(expected, result)
-    }
+    let result = Calculator.calculate (val1, Operations.Multiply, val2)
+    Assert.Equal(expected, result)
 
 [<Theory>]
 [<InlineData(6, 2, 3)>]
@@ -46,13 +40,6 @@ let Calculate_Multiply_WillReturnCorrectResult (val1, val2, expected) =
 [<InlineData(-24, -6, 4)>]
 [<InlineData(7, 2, 3.5)>]
 let Calculate_Divide_WillReturnCorrectResult (val1,  val2, expected) = 
-    result{
-        let! result = Calculator.calculate (val1, Operations.Divide, val2)
-        Assert.Equal(expected, result)
-    }
-    
-[<Fact>]
-let Calculate_DivideByZero_WillReturnError () = 
-    let result = Calculator.calculate (decimal 1, Operations.Divide, decimal 0)
-    Assert.Equal(Error "Denominator is zero(0)", result)
+    let result = Calculator.calculate (val1, Operations.Divide, val2)
+    Assert.Equal(expected, result)
 
