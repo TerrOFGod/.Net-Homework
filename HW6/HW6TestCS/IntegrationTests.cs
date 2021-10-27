@@ -1,18 +1,36 @@
-using System.Globalization;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.AspNetCore.TestHost;
+using Microsoft.Extensions.Hosting;
+
 using Xunit;
+using static HW;
 
 namespace HW6TestCS
 {
-    public class IntegrationTests
+    public class WebFactory : WebApplicationFactory<Startup>
     {
-        private const string Localhost = "http://localhost:5000";
-        private static readonly HttpClient HttpClient = new();
+        protected override IHostBuilder CreateHostBuilder()
+            => Host
+                .CreateDefaultBuilder()
+                .ConfigureWebHostDefaults(a => a
+                    .UseStartup<Startup>()
+                    .UseTestServer());
+    }
+    
+    public class IntegrationTests : IClassFixture<WebFactory>
+    {
+        private static HttpClient _client;
+        public IntegrationTests(WebFactory fixture)
+        {
+            _client = fixture.CreateClient();
+        }
         
         private static async Task RunTest(string v1, string op, string v2, string expected)
         {
-            var response = await HttpClient.GetAsync($"{Localhost}/calculate?v1={v1}&op={op}&v2={v2}");
+            var response = await _client.GetAsync($"/calculate?v1={v1}&op={op}&v2={v2}");
             var result = await response.Content.ReadAsStringAsync();
             Assert.Equal(expected, result);
         }
@@ -24,7 +42,6 @@ namespace HW6TestCS
         [InlineData("2", "multiply", "1.1", "2.2")]
         public async Task TestCalculate_Correct(string v1, string op, string v2, string expected)
         {
-            CultureInfo.CurrentCulture = new CultureInfo("en-us");
             await RunTest(v1, op, v2, expected);
         }
 

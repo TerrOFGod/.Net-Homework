@@ -2,6 +2,7 @@ module HW
 
 open System
 open HW5
+open Microsoft.Extensions.Logging
 open ResultBuilder
 open Parser
 open Calculator
@@ -34,20 +35,22 @@ let webApp =
         setStatusCode 404        >=> text "Page not Found"
         ]     
 
-let configureApp (app : IApplicationBuilder) =
-    app.UseGiraffe webApp
+type Startup() =
+    member _.ConfigureServices (services : IServiceCollection) =
+        services.AddGiraffe() |> ignore
 
-let configureServices (services : IServiceCollection) =
-    services.AddGiraffe() |> ignore
-
+    member _.Configure (app : IApplicationBuilder)
+                        (_ : IHostEnvironment)
+                        (_ : ILoggerFactory) =
+        app.UseGiraffe webApp
+        
 [<EntryPoint>]
 let main _ =
     Host.CreateDefaultBuilder()
         .ConfigureWebHostDefaults(
             fun webHostBuilder ->
                 webHostBuilder
-                    .Configure(configureApp)
-                    .ConfigureServices(configureServices)
+                    .UseStartup<Startup>()
                     |> ignore)
         .Build()
         .Run()

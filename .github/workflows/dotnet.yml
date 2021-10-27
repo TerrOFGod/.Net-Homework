@@ -23,7 +23,7 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-      working-directory: HW6/HW6TestFS
+      working-directory: HW6/HW6TestCS
     - name: Codecov
       uses: codecov/codecov-action@v2.1.0
       with: 

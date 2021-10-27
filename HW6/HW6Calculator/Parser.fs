@@ -41,4 +41,4 @@ let checkDivide (a: decimal, operation, b: decimal) =
                            
         
 let tryParseArgs args=
-    tryParseOperation args>>= tryParseValues  >>= checkDivide
+    tryParseOperation args >>= tryParseValues  >>= checkDivide
