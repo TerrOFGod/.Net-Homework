@@ -2,7 +2,7 @@
 
 namespace HW8.Logic
 {
-    public class Parser
+    public static class Parser
     {
         public static bool TryParseOperation(string str, out Operations result)
         {

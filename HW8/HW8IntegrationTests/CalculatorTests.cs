@@ -33,7 +33,7 @@ namespace HW8IntegrationTests
         [InlineData("4", "plus", "3", "7")]
         [InlineData("32", "minus", "2", "30")]
         [InlineData("6", "division", "5", "1.2")]
-        [InlineData("4,5", "multiplication", "2", "9")]
+        [InlineData("4", "multiplication", "2", "8")]
         public async Task Calculate_ValidArguments_Correct(string v1, string op, string v2, string excepted)
         {
             await MakeGeneralPartTests(v1, op, v2, excepted);

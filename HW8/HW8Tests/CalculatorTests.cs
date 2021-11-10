@@ -10,7 +10,7 @@ namespace HW8Tests
         [InlineData("4", "plus", "3", "7")]
         [InlineData("32", "minus", "2", "30")]
         [InlineData("6", "division", "5", "1.2")]
-        [InlineData("4,5", "multiplication", "2", "9")]
+        [InlineData("45", "multiplication", "2", "90")]
         public void Calculate_ValidArguments(string v1, string op, string v2, string excepted)
         {
             MakeGeneralPartTests(v1, op, v2, excepted);
