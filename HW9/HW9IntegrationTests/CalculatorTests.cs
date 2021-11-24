@@ -36,7 +36,7 @@ namespace HW9IntegrationTests
         [InlineData("6 pl 7", "13")]
         [InlineData("4 - 5", "-1")]
         [InlineData("6 * 8", "48")]
-        [InlineData("6 / 5", "1,2")]
+        [InlineData("6 / 3", "2")]
         [InlineData("(5 pl 5) * 2", "20")]
         [InlineData("2 * (5 pl 5)", "20")]
         [InlineData("2 pl 2 * (5 pl 5)", "22")]
