@@ -1,4 +1,5 @@
 ﻿using System;
+using HW2Classes;
 
 namespace HW2
 {
