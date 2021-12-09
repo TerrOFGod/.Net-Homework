@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <WarnOn>3390;$(WarnOn)</WarnOn>
+        <RootNamespace>HW4</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Expression.fs" />
+        <Compile Include="Operations.fs" />
+        <Compile Include="ResultBuilder.fs" />
+        <Compile Include="Parser.fs" />
+        <Compile Include="Calculator.fs" />
+    </ItemGroup>
+
+</Project>
