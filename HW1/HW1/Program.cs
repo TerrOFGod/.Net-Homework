@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HW2
+namespace HW1
 {
     public static class Program
     {
