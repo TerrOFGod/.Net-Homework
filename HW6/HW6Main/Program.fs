@@ -1,4 +1,4 @@
-module HW
+module HW6
 
 open System
 open HW5

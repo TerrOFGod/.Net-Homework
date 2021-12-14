@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.Hosting;
 
 using Xunit;
-using static HW;
+using static HW6;
 
 namespace HW6TestCS
 {
