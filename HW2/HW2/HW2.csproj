@@ -9,4 +9,8 @@
       <ProjectReference Include="..\HW2Classes\HW2Classes.ilproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.13" />
+    </ItemGroup>
+
 </Project>
