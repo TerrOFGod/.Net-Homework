@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -6,33 +7,55 @@ using HW10;
 using HW10.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.AspNetCore.TestHost;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Xunit;
 
 namespace HW10IntegrationTests
 {
-    public class HostBuilder : WebApplicationFactory<Startup>
+    public class CustomWebApplicationFactory<TStartup> : WebApplicationFactory<TStartup> where TStartup : class
     {
-        protected override IHostBuilder CreateHostBuilder()
-            => Host
-                .CreateDefaultBuilder()
-                .ConfigureWebHostDefaults(a => a
-                    .UseStartup<Startup>()
-                    .UseTestServer())
-                .ConfigureServices(a => a.AddDbContext<ApplicationContext>
-                    (op => op.UseInMemoryDatabase("calculatorInMemory")));
+        protected override void ConfigureWebHost(IWebHostBuilder builder)
+        {
+            builder.ConfigureServices(services =>
+            {
+                var descriptor = services.SingleOrDefault
+                    (d => d.ServiceType == typeof(DbContextOptions<ApplicationContext>));
+
+                if (descriptor != null)
+                {
+                    services.Remove(descriptor);
+                }
+
+                // Add ApplicationDbContext using an in-memory database for testing.
+                services.AddDbContext<ApplicationContext>
+                    ((_, context) => context.UseInMemoryDatabase("DbForTests"));
+
+                // Build the service provider.
+                var serviceProvider = services.BuildServiceProvider();
+
+                // Create a scope to obtain a reference to the database
+                // context (ApplicationDbContext).
+                using var scope = serviceProvider.CreateScope();
+
+                var db = scope.ServiceProvider.GetRequiredService<ApplicationContext>();
+                var logger = scope.ServiceProvider.GetRequiredService
+                    <ILogger<CustomWebApplicationFactory<TStartup>>>();
+
+                // Ensure the database is created.
+                db.Database.EnsureCreated();
+            });
+        }
     }
 
-    public class IntegrationTests : IClassFixture<HostBuilder>
+    public class IntegrationTests : IClassFixture<CustomWebApplicationFactory<Startup>>
     {
         private const string Path = "https://localhost:5001/Calculator/Calculator";
         private readonly HttpClient _client;
         private const string Error = "Wrong parameters was entered.";
         
-        public IntegrationTests(HostBuilder fixture)
+        public IntegrationTests(CustomWebApplicationFactory<Startup> fixture)
         {
             _client = fixture.CreateClient();
         }
