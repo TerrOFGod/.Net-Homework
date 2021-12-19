@@ -21,7 +21,8 @@ namespace HW10IntegrationTests
                 .CreateDefaultBuilder()
                 .ConfigureWebHostDefaults(a => a
                     .UseStartup<Startup>()
-                    .UseTestServer());
+                    .UseTestServer())
+                .ConfigureServices(a => a.AddDbContext<ApplicationContext>(op => op.UseInMemoryDatabase("calculator")));
     }
 
     public class IntegrationTests : IClassFixture<HostBuilder>
