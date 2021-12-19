@@ -3,9 +3,12 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using HW11;
+using HW11.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Xunit;
 
@@ -18,7 +21,8 @@ namespace HW11IntegrationTests
                 .CreateDefaultBuilder()
                 .ConfigureWebHostDefaults(a => a
                     .UseStartup<Startup>()
-                    .UseTestServer());
+                    .UseTestServer())
+                .ConfigureServices(a => a.AddDbContext<ApplicationContext>(op => op.UseInMemoryDatabase("calculator")));
     }
 
     public class IntegrationTests : IClassFixture<HostBuilder>
