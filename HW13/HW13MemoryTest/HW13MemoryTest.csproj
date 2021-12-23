@@ -4,24 +4,21 @@
         <TargetFramework>net5.0</TargetFramework>
 
         <IsPackable>false</IsPackable>
-        <GenerateProgramFile>false</GenerateProgramFile>
-        <RootNamespace>HW4Test</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="ParserTests.fs" />
-        <Compile Include="CalculatorTests.fs" />
-        <Compile Include="ProgramTests.fs" />
-        <Compile Include="Program.fs" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
         <PackageReference Include="JetBrains.dotMemory.Console.windows-x64" Version="2021.3.1" />
         <PackageReference Include="JetBrains.DotMemoryUnit" Version="3.1.20200127.214830" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="5.0.12" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.13" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.13" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.13">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
         <PackageReference Include="xunit" Version="2.4.1" />
         <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -34,7 +31,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\HW5\HW5.fsproj" />
+      <ProjectReference Include="..\..\HW11\HW11\HW11.csproj" />
     </ItemGroup>
 
 </Project>
