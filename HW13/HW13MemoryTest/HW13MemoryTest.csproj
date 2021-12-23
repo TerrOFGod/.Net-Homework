@@ -32,6 +32,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\HW11\HW11\HW11.csproj" />
+      <ProjectReference Include="..\HW13\HW13.csproj" />
     </ItemGroup>
 
 </Project>
