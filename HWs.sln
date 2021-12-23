@@ -46,6 +46,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW11IntegrationTests", "HW1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW12", "HW12\HW12\HW12.csproj", "{79117A0B-3AE5-4B09-8FBE-010F0D5CFC0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW13Benchmark", "HW13\HW13Benchmark\HW13Benchmark.csproj", "{CDA44347-2267-4060-A69D-E6670200CF1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -116,5 +118,9 @@ Global
 		{79117A0B-3AE5-4B09-8FBE-010F0D5CFC0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79117A0B-3AE5-4B09-8FBE-010F0D5CFC0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79117A0B-3AE5-4B09-8FBE-010F0D5CFC0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDA44347-2267-4060-A69D-E6670200CF1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDA44347-2267-4060-A69D-E6670200CF1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDA44347-2267-4060-A69D-E6670200CF1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDA44347-2267-4060-A69D-E6670200CF1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
