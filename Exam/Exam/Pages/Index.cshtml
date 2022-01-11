@@ -1,0 +1,79 @@
+﻿@page
+@model UI.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <h3 class="text-center ml-auto mr-auto">
+        Создание персонажа
+    </h3>
+
+    <div class="validation text-danger" asp-validation-summary="ModelOnly"></div>
+    <form class="container shadow p-3" method="post">
+        <div>
+            <label asp-for="Player.Name" class="col-form-label text-dark">User Name:</label>
+            <input asp-for="Player.Name" class="form-control"/>
+            <span asp-validation-for="Player.Name" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Player.HP" class="col-form-label text-dark">Hit Points:</label>
+            <input asp-for="Player.HP" class="form-control"/>
+            <span asp-validation-for="Player.HP" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Player.AttackModifier" class="col-form-label text-dark">Attack Modifier +:</label>
+            <input asp-for="Player.AttackModifier" class="form-control"/>
+            <span asp-validation-for="Player.AttackModifier" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Player.AttackPerRound" class="col-form-label text-dark">Attack Per Round:</label>
+            <input asp-for="Player.AttackPerRound" class="form-control"/>
+            <span asp-validation-for="Player.AttackPerRound" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Player.Damage" class="col-form-label text-dark">Damage:</label>
+            <input asp-for="DiceCount" class="width"/>
+            <span asp-validation-for="DiceCount" class="text-danger"></span>
+            d
+            <input asp-for="Dice" class="width"/>
+            <span asp-validation-for="Dice" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Player.DamageModifier" class="col-form-label text-dark">Damage Modifier +:</label>
+            <input asp-for="Player.DamageModifier" class="form-control"/>
+            <span asp-validation-for="Player.DamageModifier" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Player.AC" class="col-form-label text-dark">AC:</label>
+            <input asp-for="Player.AC" class="form-control"/>
+            <span asp-validation-for="Player.AC" class="text-danger"></span>
+        </div>
+        <button class="btn btn-primary" type="submit">Fight</button>
+    </form>
+    
+    @if (Model.Log is not null)
+        {
+            var log = Model.Log;
+            <div class="col-6">
+                @for(var i = 0; i < log.Count; i++)
+                {
+                    <p>Round @(i+1)</p>
+                    <p>@log[i].PlayerLog</p>
+                    <p>@log[i].EnemyLog</p>
+                }
+                <div>
+                    
+                    @if (Model.Player.HP > 0)
+                    {
+                        <h3>Вы победили </h3>
+                    }
+                    else
+                    {
+                        <h3>Вы проиграли </h3>
+                    }
+                    
+                </div>
+            </div>
+        }
+</div>
